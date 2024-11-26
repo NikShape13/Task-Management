@@ -67,10 +67,5 @@
 
     docker-compose down
     
-Для пересборки контейнеров используйте:
-
-bash
-
-    docker-compose up --build
     
 
