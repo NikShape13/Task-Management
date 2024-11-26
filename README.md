@@ -35,7 +35,7 @@
 2. Перейдите в директорию проекта:
     ```bash
    cd Task-Management-main
-3. Запуск Maven: (если на этом этапе программа не компилируется, то, возможно у вас занят необходимый для базы данных порт, поменяйте дефолтный порт в файле 'src/main/resources/application.properties' в значении 'spring.datasource.url')
+3. Запуск Maven: (если на этом этапе программа не компилируется, то, возможно у вас занят необходимый для базы данных порт "5432", поменяйте дефолтный порт в файле 'src/main/resources/application.properties' в значении 'spring.datasource.url')
    
        mvn clean install
     
