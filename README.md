@@ -34,7 +34,7 @@
    
 2. Перейдите в директорию проекта:
     ```bash
-   cd Task-Management
+   cd Task-Management-main
 3. Запуск Maven:
    
        mvn clean install
