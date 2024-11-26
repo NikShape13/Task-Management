@@ -20,7 +20,6 @@
 ## Требования
 
 - [Docker](https://www.docker.com/get-started) — для контейнеризации приложения.
-- [Docker Compose](https://docs.docker.com/compose/install/) — для управления многоконтейнерными приложениями.
 - [Maven](https://maven.apache.org/) - для сборки проекта.
 - [Git](https://git-scm.com/) — для клонирования репозитория.
 
