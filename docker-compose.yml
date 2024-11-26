@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  app:
+    image: openjdk:17
+    container_name: spring_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/task_management
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=1304
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1304
+      POSTGRES_DB: task_management
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./docker/sql:/docker-entrypoint-initdb.d
+
+volumes:
+  postgres_data:
