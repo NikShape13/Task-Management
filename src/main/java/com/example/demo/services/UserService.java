@@ -122,7 +122,6 @@ public class UserService {
 
     
     public User getCurrentUser() {
-        // Получение имени пользователя из контекста Spring Security
         var email = SecurityContextHolder.getContext().getAuthentication().getName();
         return getByEmail(email);
     }
